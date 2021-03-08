@@ -15,6 +15,12 @@
   text-align: center;
 }
 
+.plan__lists {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 .plan {
   background: #d5ffdc;
   text-align: center;
