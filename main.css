@@ -1,13 +1,24 @@
 #product-overview {
-  background-image: url("freedom.jpg");
+  background-image: url("images/freedom.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 30%;
+  background-origin: border-box;
+  background-clip: border-box;
   width: 100%;
   height: 528px;
   padding: 10px;
+  margin-top: 43px;
+  position: relative;
 }
 
 #product-overview h1 {
-  color: white;
+  color: #ececec;
   font-family: "Anton", sans-serif;
+  position: absolute;
+  bottom: 1%;
+  left: 3%;
+  z-index: 0;
 }
 
 .plans-tittle {

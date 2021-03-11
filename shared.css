@@ -4,14 +4,17 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 0px;
+  margin: 0;
 }
 
 .main-header {
   background: #2ddf5c;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 8px 16px;
-  vertical-align: middle;
+  z-index: 1;
 }
 
 .nav-home {
