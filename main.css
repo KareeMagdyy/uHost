@@ -1,15 +1,21 @@
 #product-overview {
-  background-image: url("images/freedom.jpg");
+  background-image: linear-gradient(
+      to top,
+      rgba(80, 68, 18, 0.6) 10%,
+      transparent
+    ),
+    url("images/freedom.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 10% 30%;
+  background-position: 10% 20%;
   background-origin: border-box;
   background-clip: border-box;
   width: 100%;
-  height: 528px;
-  padding: 0.6rem;
+  height: 35vh;
   margin-top: 2.6rem;
   position: relative;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 #product-overview h1 {
