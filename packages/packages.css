@@ -1,5 +1,5 @@
 main {
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 .background {
@@ -12,7 +12,7 @@ main {
 }
 
 .package {
-  margin: 16px 0;
+  margin: 1rem 0;
   width: 80%;
   border: 3px solid #0e4f1f;
   position: relative;
@@ -22,19 +22,19 @@ main {
   text-decoration: none;
   display: block;
   color: inherit;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .package__badge {
   position: absolute;
   right: 0;
   top: 0;
-  margin: 20px;
-  font-size: 16px;
+  margin: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   background: #ff5454;
   color: white;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -44,9 +44,9 @@ main {
 }
 
 .package__info {
-  padding: 16px;
+  padding: 1rem;
   border: 1px solid #0e4f1f;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #0e4f1f;
   background: white;
 }
