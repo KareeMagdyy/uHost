@@ -1,21 +1,10 @@
 #product-overview {
-  background-image: linear-gradient(
-      to top,
-      rgba(80, 68, 18, 0.6) 10%,
-      transparent
-    ),
-    url("images/freedom.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 10% 20%;
-  background-origin: border-box;
-  background-clip: border-box;
-  width: 100%;
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") center / cover no-repeat border-box, #ff1b68;
+  width: 100vw;
   height: 35vh;
-  margin-top: 2.6rem;
+  margin-top: 2.75rem;
   position: relative;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 #product-overview h1 {
@@ -24,7 +13,18 @@
   position: absolute;
   bottom: 1%;
   left: 3%;
-  z-index: 0;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 44rem) {
+  #product-overview {
+    height: 45vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 2rem;
+  }
 }
 
 .plans-tittle {
@@ -32,26 +32,17 @@
   text-align: center;
 }
 
-.plan__lists {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-}
-
 .plan {
   background: #d5ffdc;
   text-align: center;
   padding: 1rem;
-  margin: 0.5rem;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+  margin: 0.5rem 0;
+  width: 100%;
 }
 
 .plan--highlighted {
   background: #19b84c;
   color: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
@@ -66,6 +57,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 44rem) {
+  .plan__lists {
+    width: 100%;
+    text-align: center;
+  }
+  .plan {
+    display: inline-block;
+    width: 30%;
+    margin: 0.5rem;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .plan__tittle {
@@ -128,10 +137,13 @@
   text-align: center;
 }
 
-.key-feature {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
+@media (min-width: 44rem) {
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    max-width: 25rem;
+  }
 }
 
 .key-feature___image {
