@@ -5,31 +5,29 @@ var exitModal = document.querySelector('.modal__action--negative');
 var toggleButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
 
-// console.log(exitModal);
 
-// backdrop.style.display = 'block';
 
 for(var i = 0; i<selectPlanButtons.length; i++) {
     selectPlanButtons[i].addEventListener('click', function() {
-        backdrop.style.display = 'block';
-        modal.style.display = 'block';
+        backdrop.classList.add('open');
+        modal.classList.add('open');
     });
 }
 
 function closeModal() {
-    backdrop.style.display = 'none';
-    modal.style.display = 'none';
+    backdrop.classList.remove('open');
+    modal.classList.remove('open');
 };
 
 backdrop.addEventListener('click', function(){
-    mobileNav.style.display = 'none';
+    mobileNav.classList.remove('open');
     closeModal();
 });
 
 exitModal.addEventListener('click', closeModal);
 
 toggleButton.addEventListener('click', function(){
-    mobileNav.style.display = 'block';
-    backdrop.style.display = 'block';
+    mobileNav.classList.add('open');
+    backdrop.classList.add('open');
 });
 
