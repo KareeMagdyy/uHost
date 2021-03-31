@@ -3,7 +3,6 @@
     url("images/freedom.jpg") center / cover no-repeat border-box, #ff1b68;
   width: 100vw;
   height: 35vh;
-  margin-top: 2.75rem;
   position: relative;
 }
 
@@ -16,7 +15,7 @@
   font-size: 1.3rem;
 }
 
-@media (min-width: 44rem) and (min-height: 60rem) {
+@media (min-width: 44rem) and (min-height: 40rem) {
   #product-overview {
     height: 45vh;
     background-position: 50% 25%;

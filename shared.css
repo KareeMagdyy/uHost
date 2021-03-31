@@ -7,6 +7,11 @@ body {
   margin: 0;
 }
 
+main {
+  min-height: calc(100vh - 3.5rem - 8rem);
+  margin-top: 3.5rem;
+}
+
 .backdrop {
   position: fixed;
   z-index: 5;
@@ -59,14 +64,13 @@ body {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.4rem;
   display: inline-block;
   vertical-align: middle;
+  height: 2.5rem;
 }
 
 .main-header__brand img {
-  height: 2rem;
-  vertical-align: middle;
+  height: 100%;
 }
 
 .main-nav {
