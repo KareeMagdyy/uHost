@@ -131,6 +131,35 @@ main {
   color: #ff1b68;
 }
 
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  padding: 0.5rem;
+  border: 1.5px solid #0e4f1f;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover,
+.button:active {
+  color: #0e4f1f;
+  background: white;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+  background: #ccc;
+  color: #a1a1a1;
+  border-color: #a1a1a1;
+}
+
 .main-footer {
   background: black;
   padding: 2rem;

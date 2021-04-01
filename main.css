@@ -96,28 +96,6 @@
   margin: 0.5rem 0;
 }
 
-.button {
-  background: #0e4f1f;
-  color: white;
-  font: inherit;
-  padding: 0.5rem;
-  border: 1.5px solid #0e4f1f;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.button:hover,
-.button:active {
-  color: #0e4f1f;
-  background: white;
-}
-
-.button:focus {
-  outline: none;
-}
-
 #key-features {
   background: #ff1b68;
   margin-top: 5rem;
