@@ -61,18 +61,26 @@
 @media (min-width: 44rem) {
   .plan__lists {
     width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
   }
   .plan {
-    display: inline-block;
     width: 30%;
     margin: 0.5rem;
-    vertical-align: middle;
     min-width: 13rem;
     max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
   }
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 1;
   }
 }
 
@@ -115,10 +123,13 @@
 }
 
 @media (min-width: 44rem) {
+  .key-features__list {
+    display: flex;
+    justify-content: center;
+  }
+
   .key-feature {
-    display: inline-block;
     width: 30%;
-    vertical-align: top;
     max-width: 25rem;
   }
 }
