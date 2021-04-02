@@ -34,11 +34,9 @@ main {
   left: 0;
   padding: 0.5rem 1rem;
   z-index: 1;
-}
-
-.nav-home {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .toggle-button {
@@ -67,20 +65,11 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  display: inline-block;
-  vertical-align: middle;
-  height: 2.5rem;
 }
 
 .main-header__brand img {
-  height: 100%;
-}
-
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 74px);
   vertical-align: middle;
+  height: 2.5rem;
 }
 
 .main-nav__items {
@@ -92,7 +81,7 @@ main {
 
 @media (min-width: 44rem) {
   .main-nav__items {
-    display: block;
+    display: flex;
   }
   .toggle-button {
     display: none;
@@ -100,7 +89,6 @@ main {
 }
 
 .main-nav__item {
-  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -172,8 +160,11 @@ main {
 .main-footer__links {
   margin: 0;
   padding: 0;
-  text-align: center;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-footer__link {
@@ -181,8 +172,11 @@ main {
 }
 
 @media (min-width: 44rem) {
+  .main-footer__links {
+    flex-direction: row;
+  }
+
   .main-footer__link {
-    display: inline-block;
     margin: 0 1rem;
   }
 }
@@ -204,7 +198,7 @@ main {
   top: 0;
   left: 0;
   background: white;
-  width: 80%;
+  width: 70%;
   height: 100vh;
 }
 
@@ -212,9 +206,12 @@ main {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-nav__item {
